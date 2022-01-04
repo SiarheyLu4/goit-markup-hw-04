@@ -11,6 +11,7 @@
   --tenth-color: #ececec;
   --eleventh-color: rgba(0, 0, 0, 0.15);
   --twelfth-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -307,9 +308,21 @@ img {
 .team-social-link {
   width: 44px;
   height: 44px;
-  background-color: red;
-  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  color: var(--icon-color);
+}
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--first-color);
+  color: var(--fifth-color);
 }
 
 /* --------------------Contacts-------------------------- */
