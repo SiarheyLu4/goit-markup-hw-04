@@ -73,6 +73,9 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 /* :focus {
@@ -84,8 +87,10 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-
   border-bottom: 1px solid var(--tenth-color);
+  max-width: 1600px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -108,7 +113,7 @@ img {
 }
 
 .header-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .header-logo {
@@ -170,7 +175,11 @@ img {
     url(../images/main-block-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px auto;
+  background-size: cover;
+  max-width: 1600px;
+  min-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
 }
 .block-title {
   font-weight: 900;
@@ -392,6 +401,9 @@ img {
 
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -532,8 +544,12 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus-within {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
